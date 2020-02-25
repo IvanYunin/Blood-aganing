@@ -30,11 +30,7 @@ def main():
  
     X, y = DataManager.get_X_y(data, args.target)
     
-    # train
-    # test
-    # save results
-
-
+    model_mngr.run(X, y, args.ratio)
 
 if __name__ == '__main__':
     sys.exit(main())
