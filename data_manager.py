@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 class DataManager:
     def __init__(self, path):
         self.data_path = pd.load_scv(path)
@@ -12,6 +11,12 @@ class DataManager:
 
     def load_data(self):
         return pd.load_scv(self.data_path)
+
+    @staticmethod
+    def get_X_y(data, target):
+        X = data.drop(target, axis = 1).values
+        y = data[target].values
+        return X, y
 
     # @staticmethod
     # def train_test_split(data):
