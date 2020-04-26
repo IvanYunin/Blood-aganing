@@ -1,5 +1,5 @@
 import numpy as numpy
-from DataManager import DataManager
+from data_manager import DataManager
 
 def train(model, X, y):
     model.fit(X,y)

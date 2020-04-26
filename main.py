@@ -9,8 +9,8 @@ def make_parser():
     parser = argparse.ArgumentParser(description='Blood aging')
     parser.add_argument('data_path', type=str, help='Path to data')
     parser.add_argument('--features', type=str, nargs="*", default='ALL',\
-        help='Names of features for train model')
-    parser.add_argument('task_type', type=str, help='Regression or classification (regr/class')
+        help='Names of features for train')
+    parser.add_argument('task_type', type=str, help='Regression or classification (regr/class)')
     parser.add_argument('model_name', type=str, help='Model name')
     parser.add_argument('--target', type=str, default='age', help='Name of column to prediction')
     # parser.add_argument('--test_data_path', type=str, default=None, help='Path to test data')
